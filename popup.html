@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 100%;
+      }
+      nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      white-space: nowrap;
+      }
+      nav li {
+      padding: 5px;
+      }
+      nav a {
+      width: 100%;
+      }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <nav id="options">
+      <ul> 
+	<li id="tab"><a href="#">Send current tab</a></li>
+	<li id="manual"><a href="#">Send notification manually</a></li>
+	<li id="settings"><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    
+    <div id="send-manual">
+      Key
+      <input id="key" type="text" />
+      Title (optional)
+      <input id="title" type="text" />
+      Message
+      <input id="message" type="text" />
+      Event (optional)
+      <input id="event" type="text" />
+      <button id="send-button" type="button">Send</button>
+      <button id="cancel-button" type="button">Cancel</button>
+    </div>
+  </body>
+</html>
+

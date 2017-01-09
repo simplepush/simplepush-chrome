@@ -1,0 +1,26 @@
+{
+    "name": "Simplepush",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Send push notifications to your smartphone",
+    "permissions": [
+	"contextMenus",
+	"tabs",
+	"https://api.simplepush.io/*",
+	"background"
+    ],
+    "icons": {
+        "48": "icon.png"
+    },
+    "background": {
+        "scripts": [ "global.js", "background.js" ],
+	"persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Simplepush"
+    },
+    "options_page": "options.html",
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

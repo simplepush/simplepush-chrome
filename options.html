@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      body {
+      font-size: 1.1em;
+      margin: 1em;
+      }
+      div span {
+      margin: 0 .5em 0 .5em;
+      }
+      #error {
+      display: none;
+      color: #E91E63;
+      }
+      img {
+      height: 1.2em;
+      vertical-align: middle;
+      }
+      input {
+      font-size: inherit;
+      }
+      input#key {
+      font-size: 1.2em;
+      font-family: monospace;
+      width: 3.6em;
+      margin: 0 .5em 0 .5em;
+      }
+      .small {
+      font-size: .8em;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Simplepush Chrome extension</h3>
+    <div>
+      Enter your key
+      <input id="key" type="text" />
+      <button id="save" type="button">Save</button>
+    </div>
+    <div class="small"><ul>
+	<li>key is case sensitive</li>
+	<li>key check is not possible: wrong key fails silently</li>
+	<li>right-click context button can push
+	  <ul>
+	    <li>url of current tab</li>
+	    <li>image</li>
+	    <li>selected text</li>
+	  </ul>
+	</li>
+      </ul>
+      version <script src="options.js"></script>
+    </div>
+  </body>
+</html>
+
